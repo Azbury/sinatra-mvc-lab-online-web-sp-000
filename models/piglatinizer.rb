@@ -4,6 +4,12 @@ class PigLatinizer
     phrase_array.map do |word|
       if word.length == 1
         word + "way"
+      else
+        word_array = word.split(//)
+        word_array.push(word_array[0])
+        word_array.delete_at(0)
+        word_array.push("ay")
+        word_array.join
       end
     end
     phrase_array.join(" ")
