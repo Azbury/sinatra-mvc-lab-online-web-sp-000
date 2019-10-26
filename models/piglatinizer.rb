@@ -1,3 +1,4 @@
+require 'pry'
 class PigLatinizer
   def piglatinize (phrase)
     phrase_array = phrase.split(' ')
