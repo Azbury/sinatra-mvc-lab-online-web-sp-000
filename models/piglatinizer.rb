@@ -10,6 +10,7 @@ class PigLatinizer
         word_array.delete_at(0)
         word_array.push("ay")
         word_array.join
+        binding.pry
       end
     end
     phrase_array.join(" ")
