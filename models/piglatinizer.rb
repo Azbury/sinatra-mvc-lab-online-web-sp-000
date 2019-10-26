@@ -6,5 +6,7 @@ class PigLatinizer
         word + "way"
       end
     end
+    phrase_array.join(" ")
+    phrase_array
   end
 end
